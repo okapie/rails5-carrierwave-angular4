@@ -12,10 +12,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     HttpModule,
   ],
-  providers: [
-    {provide: Http, useFactory: (backend: XHRBackend, defaultOptions: RequestOptions) => new Http(backend, defaultOptions),
-      deps: [XHRBackend, RequestOptions]}
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
