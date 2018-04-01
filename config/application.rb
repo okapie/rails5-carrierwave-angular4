@@ -18,6 +18,9 @@ Bundler.require(*Rails.groups)
 
 module Angular4Rails5
   class Application < Rails::Application
+
+    config.x.cors_allowed_origins = ENV.fetch('CORS_ALLOWED_ORIGINS', 'localhost:4200')
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 

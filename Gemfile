@@ -19,6 +19,8 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder.
 gem 'jbuilder',     '2.7.0'
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'rack-cors'
 
 group :development, :test do
   # This following setup is to avoid being used by production environment.
