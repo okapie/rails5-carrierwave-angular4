@@ -1,0 +1,52 @@
+.container {
+  text-align: center;
+}
+
+.markLayout, h2, ul {
+  width: 780px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+ul.header > li {
+  width: 33%;
+  list-style: none;
+  background: #888;
+  box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  padding: 5px;
+}
+
+ul.body > li {
+  width: 33%;
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+
+  border-color: #000;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  padding: 5px;
+}
+
+ul.header > li:nth-child(1) {
+  border-left-width: 1px;
+}
+
+ul.header > li:last-child {
+  border-rignt-width: 1px;
+}
+
+ul.body > li:nth-child(1) {
+  border-left-width: 1px;
+}
+
+ul.body > li:nth-child(2n+1) {
+  border-rignt-width: 1px;
+}
