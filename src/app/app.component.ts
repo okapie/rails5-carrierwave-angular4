@@ -26,8 +26,6 @@ export class AppComponent {
   constructor(private http: Http) {
     http.get('http://localhost:3000/users.json')
       .subscribe(res => {
-        res.json()
-        console.log(res.json())
         this.members[0] = res.json()
       });
   }
